@@ -124,7 +124,7 @@ public class Venue {
     }
   }
 
-  // public void firstToUppercase() {
-  //   this.name = WordUtils.capitalize(this.name.toLowerCase());
-  // }
+  public void firstToUppercase() {
+    this.name = WordUtils.capitalize(this.name.toLowerCase());
+  }
 }
