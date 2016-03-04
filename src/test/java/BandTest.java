@@ -56,7 +56,7 @@ public class BandTest {
     Venue savedVenue = myBand.getVenues().get(0);
     assertTrue(myVenue.equals(savedVenue));
   }
-///
+
   @Test
   public void getVenues_returnsAllVenues_ArrayList() {
     Band myBand = new Band("Household chores");
