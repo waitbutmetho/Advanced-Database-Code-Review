@@ -155,7 +155,6 @@ ALTER TABLE ONLY venues ALTER COLUMN id SET DEFAULT nextval('venues_id_seq'::reg
 --
 
 COPY bands (id, name) FROM stdin;
-47	New New
 \.
 
 
@@ -163,7 +162,7 @@ COPY bands (id, name) FROM stdin;
 -- Name: bands_id_seq; Type: SEQUENCE SET; Schema: public; Owner: Guest
 --
 
-SELECT pg_catalog.setval('bands_id_seq', 47, true);
+SELECT pg_catalog.setval('bands_id_seq', 71, true);
 
 
 --
@@ -171,7 +170,6 @@ SELECT pg_catalog.setval('bands_id_seq', 47, true);
 --
 
 COPY bands_venues (id, band_id, venue_id) FROM stdin;
-20	47	19
 \.
 
 
@@ -179,7 +177,7 @@ COPY bands_venues (id, band_id, venue_id) FROM stdin;
 -- Name: bands_venues_id_seq; Type: SEQUENCE SET; Schema: public; Owner: Guest
 --
 
-SELECT pg_catalog.setval('bands_venues_id_seq', 20, true);
+SELECT pg_catalog.setval('bands_venues_id_seq', 37, true);
 
 
 --
@@ -187,7 +185,6 @@ SELECT pg_catalog.setval('bands_venues_id_seq', 20, true);
 --
 
 COPY venues (id, name) FROM stdin;
-19	Verizon Center
 \.
 
 
@@ -195,7 +192,7 @@ COPY venues (id, name) FROM stdin;
 -- Name: venues_id_seq; Type: SEQUENCE SET; Schema: public; Owner: Guest
 --
 
-SELECT pg_catalog.setval('venues_id_seq', 20, true);
+SELECT pg_catalog.setval('venues_id_seq', 33, true);
 
 
 --

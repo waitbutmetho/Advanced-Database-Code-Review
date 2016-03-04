@@ -1,6 +1,6 @@
 index.vtl
 
-<h1>Welcome to The Bands Venues Page</h1>
+<h1>Welcome to The Bands Venues Website</h1>
 <div class="row">
 <div class="col-sm-6">
   <form action="/add/band" method="post">
@@ -29,6 +29,9 @@ index.vtl
    <a class="btn btn-info" href="/band/$band.getId()">$band.getName()</a><br>
    #end
   </div>
+    <form action="/bands/delete/all" method="post">
+      <button class="btn btn-danger" type="submit">Delete All Bands</button>
+    </form>
 </div>
 
 <div class="col-sm-6">
@@ -38,6 +41,9 @@ index.vtl
    <a class="btn btn-info" href="/venue/$venue.getId()">$venue.getName()</a><br>
    #end
   </div>
+    <form action="/venues/delete/all" method="post">
+      <button class="btn btn-danger" type="submit">Delete All Venues</button>
+    </form>
 </div>
 
 </div>
