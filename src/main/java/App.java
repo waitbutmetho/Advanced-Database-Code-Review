@@ -75,10 +75,7 @@ public class App {
       String inputName = request.queryParams("name");
       myBand.update(inputName);
       model.put("band", myBand);
-      // model.put("template", "templates/band.vtl"); //page wont redirect to same page
       model.put("venues", Venue.all());
-      // return new ModelAndView(model, layout);
-      // }, new VelocityTemplateEngine());
       response.redirect("/");
       return null;
     });
@@ -131,10 +128,7 @@ public class App {
       String inputName = request.queryParams("name");
       myVenue.update(inputName);
       model.put("venue", myVenue);
-      // model.put("template", "templates/band.vtl"); //page wont redirect to same page
       model.put("bands", Band.all());
-      // return new ModelAndView(model, layout);
-      // }, new VelocityTemplateEngine());
       response.redirect("/");
       return null;
     });

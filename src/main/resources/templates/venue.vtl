@@ -5,7 +5,7 @@ venue.vtl
 <form action='/venue/update/$venue.getId()' method='post'>
     <!-- <input id="band_id" name="band_id" type="hidden" value="$band.getId()"> -->
     <label for="band_id">Select a band</label>
-    <select id='band_id' name='band_id' type='text'>
+    <select id='band_id' name='band_id' type='text' required>
       #foreach($band in $bands)
         <option value="$band.getId()">$band.getName()</option>
       #end

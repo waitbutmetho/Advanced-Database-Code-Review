@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="VenueTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2016-03-04T20:55:20" hostname="epicodus-117.local" time="0.178">
+<testsuite name="VenueTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2016-03-04T21:00:33" hostname="epicodus-117.local" time="0.343">
   <properties/>
   <testcase name="equals_returnsTrueIfDescriptionsAretheSame" classname="VenueTest" time="0.004"/>
-  <testcase name="save_savesObjectIntoDatabase" classname="VenueTest" time="0.013"/>
-  <testcase name="find_findsVenueInDatabase_true" classname="VenueTest" time="0.013"/>
-  <testcase name="getBands_returnsAllBands_ArrayList" classname="VenueTest" time="0.025"/>
-  <testcase name="delete_deletesAllVenuesAndListsAssoicationes" classname="VenueTest" time="0.026"/>
-  <testcase name="all_emptyAtFirst" classname="VenueTest" time="0.008"/>
-  <testcase name="firstToUppercase_makesFirstLetterUppercase_true" classname="VenueTest" time="0.013"/>
-  <testcase name="addBand_addsBandToVenue" classname="VenueTest" time="0.024"/>
-  <testcase name="save_assignsIdToObject" classname="VenueTest" time="0.013"/>
-  <testcase name="deleteAllVenues_deletesAllVenuesAtOnce" classname="VenueTest" time="0.021"/>
-  <testcase name="update_updatesNameOfVenue" classname="VenueTest" time="0.017"/>
+  <testcase name="save_savesObjectIntoDatabase" classname="VenueTest" time="0.047"/>
+  <testcase name="find_findsVenueInDatabase_true" classname="VenueTest" time="0.065"/>
+  <testcase name="getBands_returnsAllBands_ArrayList" classname="VenueTest" time="0.114"/>
+  <testcase name="delete_deletesAllVenuesAndListsAssoicationes" classname="VenueTest" time="0.024"/>
+  <testcase name="all_emptyAtFirst" classname="VenueTest" time="0.009"/>
+  <testcase name="firstToUppercase_makesFirstLetterUppercase_true" classname="VenueTest" time="0.014"/>
+  <testcase name="addBand_addsBandToVenue" classname="VenueTest" time="0.022"/>
+  <testcase name="save_assignsIdToObject" classname="VenueTest" time="0.012"/>
+  <testcase name="deleteAllVenues_deletesAllVenuesAtOnce" classname="VenueTest" time="0.02"/>
+  <testcase name="update_updatesNameOfVenue" classname="VenueTest" time="0.012"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

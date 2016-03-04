@@ -1,24 +1,15 @@
-# Title
+# Bands and Venues
 
-#### Description and Date
+#### Simple website that allows users to add bands and venues then add venues to bands and bands to venues  Date:03/04/2016
 
 #### Author - Joshua Gustafson
 
-## Description
-
 ## Setup/Installation Requirements
-
 * Clone this repository.
 * Make sure you have Java and Gradle installed.
-    * For Java:
-        * Download and install [Java SDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-        * Download and install [Java JRE](http://www.java.com/en/)
-    * For Gradle: if you are using Homebrew on Mac:
-        * $ brew update
-        * $ brew install gradle
 * In the top level of the cloned directory, run the following command in your terminal:
     * $ gradle run
-* Open your web browser of choice to localhost:4567
+* Open your web browser of choice to localhost:4567/
 
 ## Technologies Used
 
@@ -26,7 +17,7 @@ Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap
 
 ### License
 
-This software is licensed under the MIT license.
+MIT license.
 
 Copyright (c) 2016
 
