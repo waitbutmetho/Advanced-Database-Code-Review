@@ -32,4 +32,14 @@ public class AppTest extends FluentTest {
     goTo("http://localhost:4567/");
     assertThat(pageSource()).contains("Brand New");
   }
+
+  @Test
+  public void addsVenueAndDisplaysOnSamePage_true() {
+    goTo("http://localhost:4567/");
+    Venue newVenue = new Venue("modacenter");
+    newVenue.firstToUppercase();
+    newVenue.save();
+    goTo("http://localhost:4567/");
+    assertThat(pageSource()).contains("Modacenter");
+  }
 }
