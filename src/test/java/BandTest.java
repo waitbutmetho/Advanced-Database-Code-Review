@@ -16,16 +16,24 @@ public class BandTest {
 
   @Test
   public void equals_returnsTrueIfNamesAretheSame() {
-    Band firstBand = new Band("Household chores");
-    Band secondBand = new Band("Household chores");
+    Band firstBand = new Band("Brand New");
+    Band secondBand = new Band("Brand New");
     assertTrue(firstBand.equals(secondBand));
   }
 
   @Test
   public void save_savesIntoDatabase_true() {
-    Band myBand = new Band("Household chores");
+    Band myBand = new Band("Brand New");
     myBand.save();
     assertTrue(Band.all().get(0).equals(myBand));
+  }
+///
+  @Test
+  public void save_assignsIdToObject() {
+    Band myBand = new Band("Brand New");
+    myBand.save();
+    Band savedBand = Band.all().get(0);
+    assertEquals(myBand.getId(), savedBand.getId());
   }
 
 }

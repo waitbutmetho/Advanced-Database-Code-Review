@@ -27,4 +27,12 @@ public class VenueTest {
     Venue savedVenue = Venue.all().get(0);
     assertTrue(savedVenue.equals(myVenue));
   }
+
+  @Test
+  public void save_assignsIdToObject() {
+    Venue myVenue = new Venue("Modacenter");
+    myVenue.save();
+    Venue savedVenue = Venue.all().get(0);
+    assertEquals(myVenue.getId(), savedVenue.getId());
+  }
 }
