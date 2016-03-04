@@ -38,15 +38,25 @@ public class BandTest {
 
   @Test
   public void delete_deletesAllVenuesAndListsAssoicationes() {
-    Band myBand = new Band("Household chores");
+    Band myBand = new Band("Brand New");
     myBand.save();
 
-    Venue myVenue = new Venue("Mow the lawn");
+    Venue myVenue = new Venue("Modacenter");
     myVenue.save();
 
     myBand.addVenue(myVenue);
     myBand.delete();
     assertEquals(myVenue.getBands().size(), 0);
+  }
+
+  @Test
+  public void deleteAllBands_deletesAllBandsAtOnce() {
+    Band firstBand = new Band("Brand New");
+    firstBand.save();
+    Band secondBand = new Band("Brand New");
+    secondBand.save();
+    Band.deleteAllBands();
+    assertEquals(Band.all().size(), 0);
   }
 
   @Test

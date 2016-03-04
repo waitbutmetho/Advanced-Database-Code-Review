@@ -61,6 +61,7 @@ public class Venue {
     }
   }
 
+
   public void update(String name) {
     this.name = name;
     try(Connection con = DB.sql2o.open()) {

@@ -50,6 +50,16 @@ public class VenueTest {
 }
 
   @Test
+  public void deleteAllVenues_deletesAllVenuesAtOnce() {
+    Venue firstVenue = new Venue("Modacenter");
+    firstVenue.save();
+    Venue secondVenue = new Venue("Modacenter");
+    secondVenue.save();
+    Venue.deleteAllVenues();
+    assertEquals(Venue.all().size(), 0);
+  }
+
+  @Test
   public void update_updatesNameOfVenue() {
     Venue myVenue = new Venue("Modacenter");
     myVenue.save();
