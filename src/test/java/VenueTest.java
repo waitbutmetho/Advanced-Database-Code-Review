@@ -100,4 +100,13 @@ public class VenueTest {
     List savedBands = myVenue.getBands();
     assertEquals(savedBands.size(), 1);
   }
+
+  @Test
+  public void firstToUppercase_makesFirstLetterUppercase_true() {
+    Venue myVenue = new Venue("modacenter");
+    myVenue.firstToUppercase();
+    myVenue.save();
+    Venue savedVenue = Venue.all().get(0);
+    assertEquals(savedVenue.getName(), "Modacenter");
+  }
 }

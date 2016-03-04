@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BandTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2016-03-04T18:58:58" hostname="epicodus-117.local" time="0.267">
+<testsuite name="BandTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2016-03-04T19:05:53" hostname="epicodus-117.local" time="0.3">
   <properties/>
-  <testcase name="equals_returnsTrueIfNamesAretheSame" classname="BandTest" time="0.079"/>
-  <testcase name="getVenues_returnsAllVenues_ArrayList" classname="BandTest" time="0.05"/>
-  <testcase name="deleteAllBands_deletesAllBandsAtOnce" classname="BandTest" time="0.024"/>
-  <testcase name="delete_deletesAllVenuesAndListsAssoicationes" classname="BandTest" time="0.029"/>
-  <testcase name="find_findBandInDatabase_true" classname="BandTest" time="0.013"/>
-  <testcase name="all_emptyAtFirst" classname="BandTest" time="0.007"/>
-  <testcase name="save_savesIntoDatabase_true" classname="BandTest" time="0.013"/>
-  <testcase name="save_assignsIdToObject" classname="BandTest" time="0.013"/>
-  <testcase name="addVenue_addsVenueToBand" classname="BandTest" time="0.022"/>
+  <testcase name="equals_returnsTrueIfNamesAretheSame" classname="BandTest" time="0.078"/>
+  <testcase name="getVenues_returnsAllVenues_ArrayList" classname="BandTest" time="0.053"/>
+  <testcase name="deleteAllBands_deletesAllBandsAtOnce" classname="BandTest" time="0.026"/>
+  <testcase name="delete_deletesAllVenuesAndListsAssoicationes" classname="BandTest" time="0.033"/>
+  <testcase name="find_findBandInDatabase_true" classname="BandTest" time="0.014"/>
+  <testcase name="all_emptyAtFirst" classname="BandTest" time="0.009"/>
+  <testcase name="firstToUppercase_makesFirstLetterUppercase_true" classname="BandTest" time="0.017"/>
+  <testcase name="save_savesIntoDatabase_true" classname="BandTest" time="0.014"/>
+  <testcase name="save_assignsIdToObject" classname="BandTest" time="0.015"/>
+  <testcase name="addVenue_addsVenueToBand" classname="BandTest" time="0.026"/>
   <testcase name="update_updatesNameOfBand" classname="BandTest" time="0.014"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

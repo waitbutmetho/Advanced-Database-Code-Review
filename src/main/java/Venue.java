@@ -123,4 +123,8 @@ public class Venue {
       return bands;
     }
   }
+
+  // public void firstToUppercase() {
+  //   this.name = WordUtils.capitalize(this.name.toLowerCase());
+  // }
 }
