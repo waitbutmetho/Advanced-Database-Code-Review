@@ -37,6 +37,19 @@ public class VenueTest {
   }
 
   @Test
+  public void delete_deletesAllVenuesAndListsAssoicationes() {
+    Band myBand = new Band("Brand New");
+    myBand.save();
+
+    Venue myVenue = new Venue("Modacenter");
+    myVenue.save();
+
+    myVenue.addBand(myBand);
+    myVenue.delete();
+    assertEquals(myBand.getVenues().size(), 0);
+}
+
+  @Test
   public void find_findsVenueInDatabase_true() {
     Venue myVenue = new Venue("Modacenter");
     myVenue.save();
