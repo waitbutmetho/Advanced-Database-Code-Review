@@ -50,6 +50,14 @@ public class BandTest {
   }
 
   @Test
+  public void update_updatesNameOfBand() {
+    Band myBand = new Band("Brand New");
+    myBand.save();
+    myBand.update("Old New");
+    assertEquals("Old New", myBand.getName());
+  }
+
+  @Test
   public void find_findBandInDatabase_true() {
     Band myBand = new Band("Household chores");
     myBand.save();

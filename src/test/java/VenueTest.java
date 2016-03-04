@@ -50,6 +50,14 @@ public class VenueTest {
 }
 
   @Test
+  public void update_updatesNameOfVenue() {
+    Venue myVenue = new Venue("Modacenter");
+    myVenue.save();
+    myVenue.update("Verizon Center");
+    assertEquals("Verizon Center", myVenue.getName());
+  }
+
+  @Test
   public void find_findsVenueInDatabase_true() {
     Venue myVenue = new Venue("Modacenter");
     myVenue.save();
