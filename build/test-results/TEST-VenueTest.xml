@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="VenueTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-03-04T18:13:41" hostname="epicodus-117.local" time="0.096">
+<testsuite name="VenueTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-03-04T18:20:26" hostname="epicodus-117.local" time="0.124">
   <properties/>
-  <testcase name="equals_returnsTrueIfDescriptionsAretheSame" classname="VenueTest" time="0.005"/>
+  <testcase name="equals_returnsTrueIfDescriptionsAretheSame" classname="VenueTest" time="0.004"/>
   <testcase name="save_savesObjectIntoDatabase" classname="VenueTest" time="0.013"/>
-  <testcase name="find_findsVenueInDatabase_true" classname="VenueTest" time="0.012"/>
-  <testcase name="getBands_returnsAllBands_ArrayList" classname="VenueTest" time="0.022"/>
+  <testcase name="find_findsVenueInDatabase_true" classname="VenueTest" time="0.013"/>
+  <testcase name="getBands_returnsAllBands_ArrayList" classname="VenueTest" time="0.023"/>
+  <testcase name="delete_deletesAllVenuesAndListsAssoicationes" classname="VenueTest" time="0.026"/>
   <testcase name="all_emptyAtFirst" classname="VenueTest" time="0.008"/>
   <testcase name="addBand_addsBandToVenue" classname="VenueTest" time="0.022"/>
-  <testcase name="save_assignsIdToObject" classname="VenueTest" time="0.013"/>
+  <testcase name="save_assignsIdToObject" classname="VenueTest" time="0.014"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
