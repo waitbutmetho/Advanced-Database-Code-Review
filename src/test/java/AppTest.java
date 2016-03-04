@@ -22,4 +22,14 @@ public class AppTest extends FluentTest {
     goTo("http://localhost:4567/");
     assertThat(pageSource()).contains("Welcome to The Bands Venues Page"); // "" will return true even without route
   }
+
+  @Test
+  public void addsBandAndDisplaysOnSamePage_true() {
+    goTo("http://localhost:4567/");
+    Band newBand = new Band("brand new");
+    newBand.firstToUppercase();
+    newBand.save();
+    goTo("http://localhost:4567/");
+    assertThat(pageSource()).contains("Brand New");
+  }
 }
