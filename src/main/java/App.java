@@ -18,5 +18,18 @@ public class App {
       model.put("venues", Venue.all());
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
+
+    post("/add/band", (request, response) -> {
+      HashMap<String, Object> model = new HashMap<String, Object>();
+      String inputName = request.queryParams("name");
+      Band newBand = new Band(inputName);
+      newBand.firstToUppercase();
+      newBand.save();
+      model.put("band", newBand);
+      model.put("bands", Band.all());
+      model.put("venues", Venue.all());
+      model.put("template", "templates/index.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
   }
 }
